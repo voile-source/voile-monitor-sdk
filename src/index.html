@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>monitor</title>
+    <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+        <div id="container">
+        <div class="content" style="width:100%; word-wrap:break-word;">
+            <button id="longTaskBtn">执行longTask</button>
+       </div>
+   </div>
+   <script>
+    let longTaskBtn = document.getElementById('longTaskBtn');
+    longTaskBtn.addEventListener('click', longTask);
+    function longTask() { // 耗时200ms的长任务
+       let start = Date.now();
+        console.log('longTask开始 start', start);
+        while (Date.now() < (200 + start)) { }
+        console.log('longTask结束 end', (Date.now() - start));
+    }
+    </script>
+</body>
+
+</html>

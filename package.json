@@ -1,0 +1,28 @@
+{
+  "name": "voile-monitor-sdk",
+  "version": "0.1.6",
+  "description": "",
+  "main": "dist/index.js",
+  "browser": "dist/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@rollup/plugin-strip": "^3.0.2",
+    "@webpack-cli/serve": "^2.0.1",
+    "html-webpack-plugin": "^5.5.0",
+    "rollup": "^3.20.2",
+    "tslib": "^2.5.0",
+    "user-agent": "^1.0.4",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
